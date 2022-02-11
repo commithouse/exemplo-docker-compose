@@ -7,6 +7,7 @@ services:
       - "8000:5000"
     volumes:
       - .:/code
+      - ./conf:/etc/nginx/conf.d
      # - logvolume01:/var/log
   redis:
     container_name: redis-compose
